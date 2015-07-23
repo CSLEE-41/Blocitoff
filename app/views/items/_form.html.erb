@@ -1,0 +1,8 @@
+<div class="row">
+  <%= form_for [@user, Item.new] do |f| %>
+    <%= f.text_field :name, placeholder: "Enter Item" %>
+  <div class= "form-group">
+    <%= f.submit %>
+  </div>  
+  <% end %>
+</div>

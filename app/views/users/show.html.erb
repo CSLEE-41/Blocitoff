@@ -1,8 +1,17 @@
 <div class = "row">
   <div class = "col-md-8">
-    <h1 class= "user-heading"><%= @user %></h1>
+    <h1 class= "user-heading"><%= @user.name %></h1>
     <hr>
     <p> What else should I list here? </p>
   </div>
 </div>
+<div class= "row">
+  <div class= 'js-items'>
+    <%= render "items/item" %> 
+  </div>
+  <div class= "new-item">
+  <%= render "items/form" %>
+  </div>
+</div>
+
 
