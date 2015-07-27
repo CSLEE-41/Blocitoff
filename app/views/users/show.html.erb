@@ -4,13 +4,20 @@
     <hr>
     <p> What else should I list here? </p>
   </div>
+  <small>
+    <div class='js-items-count'><%= pluralize(@user.items.count, 'item') %>
+    </div>
+    <br>
+  </small>
 </div>
 <div class= "row">
-  <div class= 'js-items'>
-    <%= render "items/item" %> 
-  </div>
-  <div class= "new-item">
-  <%= render "items/form" %>
+  <div class= "col-md-8">
+    <div class= 'js-items'>
+        <%= render "items/item" %> 
+    </div>
+    <div class= "new-item">
+      <%= render "items/form" %>
+    </div>
   </div>
 </div>
 
